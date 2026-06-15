@@ -1,48 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>N Tech Engenius</title>
-
 <style>
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
+font-family:Arial,sans-serif;
+margin:0;
+padding:0;
+background:#f5f5f5;
 }
 
 header{
-    background:#111;
-    color:white;
-    padding:15px;
-    text-align:center;
+background:#000;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.logo{
+width:180px;
+margin-bottom:10px;
 }
 
 .hero{
-    text-align:center;
-    padding:60px 20px;
-    background:#f5f5f5;
+background:#111;
+color:white;
+text-align:center;
+padding:80px 20px;
 }
 
 .hero h1{
-    font-size:48px;
-    margin-bottom:10px;
+font-size:50px;
+margin:0;
+color:#ff6b00;
 }
 
 .hero p{
-    font-size:20px;
+font-size:22px;
+}
+
+.section{
+padding:50px 20px;
+max-width:1200px;
+margin:auto;
 }
 
 .services{
-    padding:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
 }
 
 footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:20px;
+background:#000;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+a{
+color:#ff6b00;
+text-decoration:none;
 }
 </style>
 </head>
@@ -50,32 +75,89 @@ footer{
 <body>
 
 <header>
-    <h2>N Tech Engenius</h2>
+<img src="logo.png" class="logo">
+<h2>N Tech Engenius</h2>
 </header>
 
 <section class="hero">
-    <h1>WE MAKE IT HAPPEN.</h1>
-    <p>IT Infrastructure • CCTV • Networking • AMC Support</p>
+<h1>WE MAKE IT HAPPEN.</h1>
+<p>IT Infrastructure • CCTV • Networking • AMC Support</p>
 </section>
 
-<section class="services">
-    <h2>Our Services</h2>
-    <ul>
-        <li>Laptop Sales</li>
-        <li>Desktop Sales</li>
-        <li>CCTV Installation</li>
-        <li>Networking Solutions</li>
-        <li>AMC Support</li>
-        <li>Printer Sales</li>
-        <li>Server Solutions</li>
-        <li>Access Control Systems</li>
-    </ul>
+<section class="section">
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Laptop Sales</h3>
+<p>Dell, HP, Lenovo, Acer, ASUS laptops.</p>
+</div>
+
+<div class="card">
+<h3>Desktop Sales</h3>
+<p>Business and gaming desktop solutions.</p>
+</div>
+
+<div class="card">
+<h3>CCTV Installation</h3>
+<p>Hikvision & Dahua surveillance solutions.</p>
+</div>
+
+<div class="card">
+<h3>Networking</h3>
+<p>Structured cabling, switches and Wi-Fi solutions.</p>
+</div>
+
+<div class="card">
+<h3>AMC Support</h3>
+<p>Annual maintenance contracts for businesses.</p>
+</div>
+
+<div class="card">
+<h3>Printer Sales</h3>
+<p>HP, Epson, Canon and Brother printers.</p>
+</div>
+
+<div class="card">
+<h3>Server Solutions</h3>
+<p>Enterprise server deployment and maintenance.</p>
+</div>
+
+<div class="card">
+<h3>Access Control</h3>
+<p>Biometric and attendance management systems.</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Products We Deal In</h2>
+
+<ul>
+<li>Laptops</li>
+<li>Desktops</li>
+<li>Monitors</li>
+<li>Printers</li>
+<li>CCTV Cameras</li>
+<li>Networking Equipment</li>
+<li>Servers</li>
+<li>Storage Devices</li>
+<li>Accessories</li>
+</ul>
+
+<h3>Brands</h3>
+
+<p>
+Dell • HP • Lenovo • Acer • ASUS • Samsung • Logitech • TP-Link • Hikvision • Dahua • Seagate • WD
+</p>
 </section>
 
 <footer>
-    <p>📍 3-4-482, Street 5, Kachiguda, Hyderabad, Telangana 500027</p>
-    <p>📞 8309862280</p>
-    <p>✉ support@ntechengenius.com</p>
+<p>📍 3-4-482, Street 5, Kachiguda, Hyderabad, Telangana 500027</p>
+<p>📞 8309862280</p>
+<p>✉ support@ntechengenius.com</p>
 </footer>
 
 </body>
