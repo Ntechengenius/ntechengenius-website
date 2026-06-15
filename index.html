@@ -1,73 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>N Tech Engenius</title>
+
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-font-family:Arial,sans-serif;
-margin:0;
-padding:0;
-background:#f5f5f5;
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    color:#333;
 }
 
 header{
-background:#000;
-color:white;
-padding:20px;
-text-align:center;
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
 .logo{
-width:180px;
-margin-bottom:10px;
+    width:220px;
+    max-width:90%;
+}
+
+.company-name{
+    margin-top:10px;
+    font-size:32px;
+    font-weight:bold;
 }
 
 .hero{
-background:#111;
-color:white;
-text-align:center;
-padding:80px 20px;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
 }
 
 .hero h1{
-font-size:50px;
-margin:0;
-color:#ff6b00;
+    color:#ff6b00;
+    font-size:60px;
+    margin-bottom:20px;
 }
 
 .hero p{
-font-size:22px;
+    font-size:26px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff6b00;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:5px;
+    margin:10px;
+    font-weight:bold;
 }
 
 .section{
-padding:50px 20px;
-max-width:1200px;
-margin:auto;
+    padding:60px 8%;
 }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.section h2{
+    margin-bottom:30px;
+    font-size:36px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
 }
 
 .card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#000;
+}
+
+.brands{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.brand{
+    background:white;
+    text-align:center;
+    padding:20px;
+    border-radius:8px;
+    font-weight:bold;
+    box-shadow:0 0 8px rgba(0,0,0,0.1);
+}
+
+.contact{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
 }
 
 footer{
-background:#000;
-color:white;
-text-align:center;
-padding:30px;
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
-a{
-color:#ff6b00;
-text-decoration:none;
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.company-name{
+    font-size:24px;
+}
+
 }
 </style>
 </head>
@@ -75,19 +159,29 @@ text-decoration:none;
 <body>
 
 <header>
-<img src="logo.png" class="logo">
-<h2>N Tech Engenius</h2>
+<img src="logo.png" class="logo" alt="N Tech Engenius">
+<div class="company-name">N Tech Engenius</div>
 </header>
 
 <section class="hero">
 <h1>WE MAKE IT HAPPEN.</h1>
-<p>IT Infrastructure • CCTV • Networking • AMC Support</p>
+
+<p>
+IT Infrastructure • CCTV • Networking • AMC Support
+</p>
+
+<a href="tel:8309862280" class="btn">Call Now</a>
+
+<a href="mailto:support@ntechengenius.com" class="btn">
+Email Us
+</a>
 </section>
 
 <section class="section">
+
 <h2>Our Services</h2>
 
-<div class="services">
+<div class="cards">
 
 <div class="card">
 <h3>Laptop Sales</h3>
@@ -130,35 +224,73 @@ text-decoration:none;
 </div>
 
 </div>
+
 </section>
 
 <section class="section">
+
 <h2>Products We Deal In</h2>
 
-<ul>
-<li>Laptops</li>
-<li>Desktops</li>
-<li>Monitors</li>
-<li>Printers</li>
-<li>CCTV Cameras</li>
-<li>Networking Equipment</li>
-<li>Servers</li>
-<li>Storage Devices</li>
-<li>Accessories</li>
-</ul>
+<div class="cards">
 
-<h3>Brands</h3>
+<div class="card">Laptops</div>
+<div class="card">Desktops</div>
+<div class="card">Monitors</div>
+<div class="card">Printers</div>
+<div class="card">CCTV Cameras</div>
+<div class="card">Networking Equipment</div>
+<div class="card">Servers</div>
+<div class="card">Storage Devices</div>
+<div class="card">Accessories</div>
 
-<p>
-Dell • HP • Lenovo • Acer • ASUS • Samsung • Logitech • TP-Link • Hikvision • Dahua • Seagate • WD
-</p>
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Brands We Support</h2>
+
+<div class="brands">
+
+<div class="brand">Dell</div>
+<div class="brand">HP</div>
+<div class="brand">Lenovo</div>
+<div class="brand">Acer</div>
+<div class="brand">ASUS</div>
+<div class="brand">Samsung</div>
+<div class="brand">Logitech</div>
+<div class="brand">TP-Link</div>
+<div class="brand">Hikvision</div>
+<div class="brand">Dahua</div>
+<div class="brand">Seagate</div>
+<div class="brand">WD</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 3-4-482, Street 5, Kachiguda, Hyderabad, Telangana 500027</p>
+
+<p>📞 8309862280</p>
+
+<p>✉ support@ntechengenius.com</p>
+
 </section>
 
 <footer>
-<p>📍 3-4-482, Street 5, Kachiguda, Hyderabad, Telangana 500027</p>
-<p>📞 8309862280</p>
-<p>✉ support@ntechengenius.com</p>
+© 2026 N Tech Engenius. All Rights Reserved.
 </footer>
+
+<a class="whatsapp"
+href="https://wa.me/918309862280"
+target="_blank">
+WhatsApp
+</a>
 
 </body>
 </html>
